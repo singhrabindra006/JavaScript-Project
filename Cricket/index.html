@@ -1,0 +1,81 @@
+po<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bat Ball Stump Game</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <h1>Bat Ball Stump Game</h1>
+
+  <div class="button-container">
+    <button class="button" 
+      onclick="
+        var computerChoiceValue = computerChoice();
+        var resultMess;
+        if(computerChoiceValue === 'Ball'){
+            resultMess = 'User Won.';
+        }
+        else if (computerChoiceValue === 'Bat') {
+            resultMess = `It's a tie.`;
+        }
+        else if (computerChoiceValue === 'Stump'){
+            resultMess = 'Computer won';
+        }
+        alert('You chose Bat\nComputer chose ' + computerChoiceValue + '\n' + resultMess);
+      "
+    >Bat</button>
+
+    <button class="button" 
+      onclick="
+        var computerChoiceValue = computerChoice();
+        var resultMess;
+        if(computerChoiceValue === 'Stump'){
+            resultMess = 'User Won.';
+        }
+        else if (computerChoiceValue === 'Ball') {
+            resultMess = `It's a tie.`;
+        }
+        else if (computerChoiceValue === 'Bat'){
+            resultMess = 'Computer won';
+        }
+        alert('You chose Ball\nComputer chose ' + computerChoiceValue + '\n' + resultMess);
+      "
+    >Ball</button>
+
+    <button class="button"
+      onclick="
+        var computerChoiceValue = computerChoice();
+        var resultMess;
+        if(computerChoiceValue === 'Bat'){
+            resultMess = 'User Won.';
+        }
+        else if (computerChoiceValue === 'Stump') {
+            resultMess = `It's a tie.`;
+        }
+        else if (computerChoiceValue === 'Ball'){
+            resultMess = 'Computer won';
+        }
+        alert('You chose Stump\nComputer chose ' + computerChoiceValue + '\n' + resultMess);
+      "
+    >Stump</button>
+  </div>
+
+  <script>
+    function computerChoice(){
+      var randomNumber = Math.random() * 3;
+      var computerChoice;
+      if(randomNumber > 0 && randomNumber <= 1){
+        computerChoice = "Bat";
+      } else if(randomNumber > 1 && randomNumber <= 2){
+        computerChoice = "Ball";
+      } else {
+        computerChoice = "Stump";
+      }
+      return computerChoice;
+    }
+  </script>
+</body>
+</html>
