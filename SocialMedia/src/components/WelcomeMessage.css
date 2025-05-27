@@ -1,0 +1,49 @@
+.welcome-message-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 2rem auto;
+  animation: slideUp 0.6s ease;
+}
+
+.empty-state-title {
+  color: #2d3748;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.empty-state-message {
+  color: #718096;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.load-posts-btn {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+  border: none;
+  padding: 12px 32px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.load-posts-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(72, 187, 120, 0.3);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

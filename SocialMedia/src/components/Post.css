@@ -1,0 +1,59 @@
+.post-card {
+  background: white;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  color: #2d3748;
+  font-weight: 600;
+  position: relative;
+  padding-right: 40px;
+}
+
+.badge-danger {
+  background: #fc8181 !important;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.badge-danger:hover {
+  background: #f56565 !important;
+  transform: scale(1.1);
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.badge-item {
+  background: #c3dafe;
+  color: #2b6cb0;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.badge-item:hover {
+  background: #90cdf4;
+}
+
+.reactions {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  color: #2d3748;
+  border-radius: 8px;
+  font-weight: 500;
+}
